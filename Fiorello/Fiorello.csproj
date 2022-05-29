@@ -18,6 +18,7 @@
       </PackageReference>
     </ItemGroup>
     <ItemGroup>
+      <Folder Include="wwwroot\Areas\Admin" />
       <Folder Include="wwwroot\assets" />
     </ItemGroup>
 </Project>

@@ -13,6 +13,9 @@ namespace Fiorello.DAL
         public DbSet<Blog> Blogs { get; set; }
         
         public DbSet<Say> Says { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
+
 
     }
 }

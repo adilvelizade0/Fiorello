@@ -1,0 +1,40 @@
+@model Category
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h4 class="card-title">Category Table</h4>
+                        <a class="btn btn-success" asp-area="Admin" asp-controller="Category" asp-action="Create">Create</a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Category Name</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                    <td>@Model.Id</td>
+                                    <td>
+                                        @Model.Name
+                                    </td>
+                                <td class="row justify-content-center">
+                                        <a class="btn btn-warning mx-3" asp-area="Admin" asp-controller="Category" asp-action="Update" asp-route-id="@Model.Id">Update</a>
+                                        <form method="post">
+                                            <button class="btn btn-danger" asp-area="Admin" asp-controller="Category" asp-action="Delete" asp-route-id="@Model.Id">Delete</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
